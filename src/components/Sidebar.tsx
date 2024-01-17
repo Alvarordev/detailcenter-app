@@ -8,7 +8,15 @@ const Sidebar = () => {
       <Link href={'/'} className="flex justify-center">
         <img src="/detail-center-logo.png" alt="logo" className="h-16" />
       </Link>
-      <ul></ul>
+      <ul className="flex flex-col items-center pt-20 gap-4">
+        <li className="hover:text-red-500">
+          <Link href={'/'}>Inicio</Link>
+        </li>
+
+        <li className="hover:text-red-500">
+          <Link href={'/dashboard'}>Dashboard</Link>
+        </li>
+      </ul>
     </aside>
   );
 };
