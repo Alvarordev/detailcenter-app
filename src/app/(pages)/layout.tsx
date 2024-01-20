@@ -8,7 +8,7 @@ export default function PageLayout({
 }) {
   return (
     <ModalProvider>
-      <div className="flex min-h-screen">
+      <div className="flex min-h-[100dvh]">
         <Sidebar />
         <main className="ml-32 w-full p-8 flex-grow">{children}</main>
       </div>

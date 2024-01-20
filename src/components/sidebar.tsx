@@ -30,7 +30,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="fixed flex flex-col justify-between items-center min-h-full w-32 bg-foreground text-card py-10">
+    <aside className="fixed flex flex-col justify-between items-center min-h-full w-32 bg-foreground text-card py-10 transition-all">
       <div>
         <img src="/detail-center-light.png" alt="logo" className="h-16" />
       </div>
