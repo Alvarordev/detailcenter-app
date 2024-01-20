@@ -1,13 +1,21 @@
-interface Props {
-    children: JSX.Element;
-  }
+import { cn } from "@/lib/utils";
 
-const Container = ({children}: Props) => {
-  return (
-    <div className="flex flex-col flex-grow w-full min-h-full bg-card p-8 rounded-md drop-shadow-lg">
-        {children}
-    </div>
-  )
+interface Props {
+  children: JSX.Element;
+  classname?: string;
 }
 
-export default Container
+const Container = ({ children, classname }: Props) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col flex-grow w-full bg-card p-8 rounded-md drop-shadow-lg",
+        classname
+      )}
+    >
+      {children}
+    </div>
+  );
+};
+
+export default Container;

@@ -38,9 +38,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col h-full">
       <Header title="Nuestros Servicios">
-        <Button onClick={() => router.push('/register')} variant="destructive">Empezar Cotizacion</Button>
+        <Button onClick={() => router.push('/register')} variant="default">Empezar Cotizacion</Button>
       </Header>
 
       <Container>

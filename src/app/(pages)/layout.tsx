@@ -8,7 +8,7 @@ export default function PageLayout({
   return (
     <div className="flex min-h-screen">
       <Sidebar />
-      <main className="ml-32 w-full p-8">{children}</main>
+      <main className="ml-32 w-full p-8 flex-grow">{children}</main>
     </div>
   );
 }
