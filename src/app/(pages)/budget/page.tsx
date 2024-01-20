@@ -1,11 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
+'use client'
+
 import Container from "@/components/container";
 import Header from "@/components/header";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { useRouter } from "next/navigation";
 
 const Cotizar = () => {
+  const router = useRouter()
+
   const services = [
     "Lavado de salon",
     "Aplicacion de ceramicos",
@@ -113,7 +118,7 @@ const Cotizar = () => {
               />
             </div>
 
-            <Button>Finalizar Cotizacion</Button>
+            <Button onClick={() => router.push('/clients')}>Finalizar Cotizacion</Button>
           </div>
         </section>
       </Container>
